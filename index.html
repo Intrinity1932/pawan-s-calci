@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background: linear-gradient(45deg, rgb(255, 87, 115), rgb(253, 253, 132));
+            }
+
+            .block{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+
+            .block2{
+                background-color: rgb(150, 173, 248);
+                border-style: solid;
+                border-color: rgb(255, 255, 255);
+                border: solid;
+                border-radius: 50px;
+            }
+
+            .display input{
+                background-color: rgb(248, 193, 255);
+                width: 800px;
+                height: 100px;
+                color: rgb(255, 255, 255);
+                font-size: xx-large;
+                border-style: solid;
+                border-color: rgb(0, 0, 0);
+            }
+
+            .button input{
+                height: 90px;
+                width: 199px;
+                border-radius: 100px;
+                border-color: rgb(122, 164, 255);
+                background: linear-gradient(-45deg, rgb(214, 255, 253), rgb(255, 144, 144));
+                color: rgb(0, 0, 0)
+            }
+
+            .text{
+                text-align: center;
+                color: rgb(255, 255, 255);
+                height: 15px;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="block">
+            <div class="block2">
+                <div>
+                    <h1 class="text">
+                        pawan's calci
+                    </h1>
+                </div>
+                <div class="display">
+                    <input type="text" value="" id="display">
+                </div>
+                <div class="button">
+                   <input type="button" value="X" onclick="display.value= '' ">
+                   <input type="button" value="del" onclick="display.value = display.value.slice(0,-1)">
+                   <input type="button" value="." onclick="display.value+= '.' ">
+                   <input type="button" value="/" onclick="display.value+= '/' ">
+                </div>
+                <div class="button">
+                   <input type="button" value="1" onclick="display.value+= '1' ">
+                   <input type="button" value="2" onclick="display.value+= '2' ">
+                   <input type="button" value="3" onclick="display.value+= '3' ">
+                   <input type="button" value="+" onclick="display.value+= '+' ">
+                </div>
+                <div class="button">
+                   <input type="button" value="4" onclick="display.value+= '4' ">
+                   <input type="button" value="5" onclick="display.value+= '5' ">
+                   <input type="button" value="6" onclick="display.value+= '6' ">
+                   <input type="button" value="-" onclick="display.value+= '-' ">
+                </div>
+                <div class="button">
+                   <input type="button" value="7" onclick="display.value+= '7' ">
+                   <input type="button" value="8" onclick="display.value+= '8' ">
+                   <input type="button" value="9" onclick="display.value+= '9' ">
+                   <input type="button" value="=" onclick="display.value=eval(display.value)" >
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
